@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>BELAJAR CODING.</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#course">course</a></li>
+                    <li><a href="#contack">contack</a></li>
+                      <!-- Tombol untuk membuka modal -->
+                    <button class="open-button" onclick="openModal()">Open Login</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Login</h2>
+            <form class="form-container" action="your_server_endpoint.php" method="POST">
+                <div class="form-group">
+                    <label for="Nama">Nama:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="Alamat">Alamat:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="No hp">No Hp:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="Kode Pos">Kode Pos:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="Jenis Kelamin">Jenis Kelamin:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="Agama">Agama:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper">
+        <!-- untuk home -->
+        <section id="Home">
+            <img src="https://img.freepik.com/free-vector/hand-coding-concept-illustration_114360-8413.jpg?w=740&t=st=1696150085~exp=1696150685~hmac=02c4494f8436995683424c4bff20254efde8336f43f981228c7de70d4542b374"/>
+            <div class="kolom">
+                <p class="deskripsi">Belajar Membuat Halaman web</p>
+                <h2>HTML & CSS</h2>
+                <p>HTML dan CSS merupakan pengetahuan umum yang harus dimiliki oleh setiap orang yang menggeluti bidang pemrograman web.kita akan belajar mulai dari bagaimana konsep dasar dan cara kerja dari HTML dan CSS serta bagaimana penggunaannya dalam membangun sebuah tampilan website.</p>
+                <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
+            </div>
+        </section>
+
+        <!-- untuk course -->
+        <section id="course">
+            <div class="kolom">
+                <h2>Online Course </h2>
+                <p>Dalam modul ini, kita akan mempelajari dasar-dasar pemrograman menggunakan Javascript. akan mempelajari berbagai tipe data seperti angka, array, Boolean, dan lainnya. Peserta juga akan mempelajari tentang perbandingan operator, if, else if, HTML, CSS, Git & Github. :</p>
+
+                <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
+            </div>
+            <img src="https://img.freepik.com/premium-vector/software-development-programming-coding-vector-concept_123447-266.jpg?w=740"/>
+        </section>
+        <section id="contact">
+          <div class="kolom">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>BELAJAR CODING</h3>
+                    <p>Belajar membuat halaman website menggunakan html dan css</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Tentang HTML & CSS</h3>
+                    <p>HTML memiliki keterikatan satu sama lain. CSS merupakan kode-kode yang dipakai untuk mendesain laman HTML.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Alamat</h3>
+                    <p>Jl. Karangdowo No.9, Kemoren, Karangdowo, Kec. Kedungwuni, Kabupaten Pekalongan, Jawa Tengah </p>
+                    <p>Kode Pos: 51173</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <p><b>Instagram: </b>@itsnupekalongan</p>
+                </div>
+            </div>
+         </div>
+      </section>
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2023. <b>Belajar coding.</b> All Rights Reserved.
+        </div>
+    </div>
+    
+    <script>
+        // Fungsi untuk membuka modal
+        function openModal() {
+            document.getElementById("loginModal").style.display = "block";
+        }
+
+        // Fungsi untuk menutup modal
+        function closeModal() {
+            document.getElementById("loginModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
